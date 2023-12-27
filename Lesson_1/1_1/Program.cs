@@ -2,7 +2,7 @@
 //Console.WriteLine("Hello, World!");
 //Console.WriteLine($"Первое число `{firstNumber}` больше чем второе число `{secondNumber}`");
 
-int firstNumber = 50;
+int firstNumber = 0;
 int secondNumber = 50;
 
 if (firstNumber < secondNumber)
