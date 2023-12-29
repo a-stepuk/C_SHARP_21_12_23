@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-int number = 601;
+﻿int number = 601;
 
 if (number % 2 == 0)
 {

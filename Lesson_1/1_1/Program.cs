@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-//Console.WriteLine($"Первое число `{firstNumber}` больше чем второе число `{secondNumber}`");
+﻿//Console.WriteLine($"Первое число `{firstNumber}` больше чем второе число `{secondNumber}`");
 
 int firstNumber = 0;
 int secondNumber = 50;
