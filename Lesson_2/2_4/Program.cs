@@ -1,6 +1,6 @@
 ﻿// Задача 4: Напишите программу, которая на вход принимает натуральное число N, а на выходе показывает его цифры через запятую.
 
-int number = 54;
+int number = -4;
 
 if (number <= 0)
 {
@@ -8,23 +8,31 @@ if (number <= 0)
 
     return;
 }
-else if (number > 10000)
+
+int digit = 0;
+string str = "";
+
+if (number < 10)
 {
-    Console.WriteLine($"number = {number} => заданное число слишком большое");
-
-    return;
+    Console.WriteLine($"number = {number} => {number}");
 }
-
-string num_digits = "";
-
-int counter = 10000;
-int digit = number / counter;
-
-while (digit != 0)
+else
 {
-    num_digits += digit + ", ";
-    counter /= 10;
-    digit = number / counter;
-}
+    while (number > 0)
+    {
+        digit = number % 10;
+        number /= 10;
 
-Console.WriteLine($"number = {number} => " + num_digits);
+        str += digit;
+    }
+
+    for (int i = str.Length - 1; i >= 0; i--)
+    {
+        Console.Write(str[i]);
+
+        if (i != 0)
+        {
+            Console.Write(", ");
+        }
+    }
+}
